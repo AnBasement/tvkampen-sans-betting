@@ -13,5 +13,6 @@
 
     function removeBettingElements() {
         document.querySelectorAll('div.icons-channels-rt-lilibet').forEach(el => el.remove());
+        document.querySelectorAll('div.icons-channels-rt-LiliBet').forEach(el => el.remove());
     }
 })();
