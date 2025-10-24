@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TVKampen Sans Betting
 // @namespace    http://tampermonkey.net/
-// @version      0.1-a
+// @version      0.1.1
 // @description  Removes links and icons for betting sites from TVKampen.com.
 // @author       AnBasement
 // @match        https://www.tvkampen.com/*
