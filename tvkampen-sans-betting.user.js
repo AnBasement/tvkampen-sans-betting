@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         TVKampen Sans Betting
 // @namespace    http://tampermonkey.net/
-// @version      0.1.6
+// @version      0.1.7
 // @description  Removes links and icons for betting sites from TVKampen.com.
 // @author       AnBasement
 // @match        https://www.tvkampen.com/*
 // @grant        none
+// @license      MIT
 // ==/UserScript==
 
 (function() {
@@ -20,6 +21,8 @@
         div.icons-channels-rt-n1bet,
         div.icons-channels-rt-Robocat,
         div.icons-channels-rt-Rabona,
+        div.icons-channels-rt-Puntit,
+        div.icons-channels-rt-Miki,
         div.match-details-rt__bookmaker-wrapper {
             display: none !important;
         }
@@ -34,6 +37,8 @@
         root.querySelectorAll('div.icons-channels-rt-n1bet').forEach(el => el.remove());
         root.querySelectorAll('div.icons-channels-rt-Robocat').forEach(el => el.remove());
         root.querySelectorAll('div.icons-channels-rt-Rabona').forEach(el => el.remove());
+        root.querySelectorAll('div.icons-channels-rt-Puntit').forEach(el => el.remove());
+        root.querySelectorAll('div.icons-channels-rt-Miki').forEach(el => el.remove());
     }
 
     // Removes bookmaker wrappers with betting lines
